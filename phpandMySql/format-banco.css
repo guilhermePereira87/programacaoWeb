@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+body, button, input {
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px, solid #aaa;
+    background-color: aquamarine;
+    margin: 0;
+    box-shadow: 0 0 5px 5px #54756A;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.alinha {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[name="nome"] {
+    width: 250px; 
+}
+
+button {
+    margin-bottom: 10px;
+    margin: 10px auto;
+    width: 99%;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+fieldset{
+    width: 25%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: #45AC8A;
+}
+
+legend{
+    border: 1px black;
+}
+
+p{
+    border: 1px solid #888;
+    background: rgba(111, 166, 152, 0.4);
+    width: 60%;
+    margin: 20px auto;
+}
+
+span.destaca {
+    font-weight: bold;
+    color: #003729;
+}
+
+table {
+    width: 40%;
+    border: 1px solid #0e5342;
+    border-collapse: collapse;
+}
+
+th {
+    background: #45AC8A;
+    color: #fff;
+    border: 1px solid #aaa
+
+}
+
+td {
+    background: #aaa;
+    border: 1px #45AC8A;
+    text-align: center;
+}
+
