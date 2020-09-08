@@ -71,7 +71,23 @@
 
       $banco->criarTabela($conexao);
 
+      //criar objeto aluno para o que php execute a operação com os dados
+
+      $aluno = new Alunos();
       
+      //fazemos p PHP detectar que o botão de cadastro foi acionado
+
+      if(isset($_POST["enviar"])){
+
+        $aluno->receberDadosdoFormulario($conexao);
+        $aluno->cadastrar($conexao, $banco->nomeDaTabela);
+        echo "<p> Dados do aluno cadastrados com sucesso</p>";
+      }
+
+      if(isset($_POST["tabular-dados"])){
+        //invocamos o método do objeto aluno que mostra a tabulação dos dados
+        $aluno->tabularDados($conexao, $banco->nomeDoBanco);
+      }
 
 
     ?>
